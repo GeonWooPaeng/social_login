@@ -9,7 +9,7 @@
 		align-items: center;
 	}
 	.btn_kakao_logout_cls {
-		width: 25%;
+		width: 20%;
 		height: 35px;
 		margin-bottom: 16px;
 		outline: none;
@@ -20,6 +20,13 @@
 		text-align: center;
 		font-weight: 400;
 		cursor: pointer;
+	}
+	.div_user_info_cls {
+		width: 100%;
+		height: 100%;
+		padding: 8px;
+		border: 1px solid black;
+		border-radius: 4px;
 	}
 </style>
 
@@ -32,7 +39,9 @@
 	<div class="div_logout_container_cls">
 		<button on:click={on_click_kakao_logout} class="btn_kakao_logout_cls"> 카카오 로그아웃 </button>
 	</div>
-	{user_info}
+	<div class="div_user_info_cls">
+		{user_info}
+	</div>
 </div>
 
 <script>
