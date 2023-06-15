@@ -46,7 +46,6 @@
 	import { get_token_data_kakao, get_user_info_kakao } from '../../apis/kakao_login.js';
 
 	let user_info = '';
-	let access_token = '';
 
 	onMount(async () => {
 		const params = new URLSearchParams(window.location.search);
@@ -61,7 +60,6 @@
 		const token_data = await get_token_data_kakao(access_token_params);
 		const user_data = await get_user_info_kakao(token_data.access_token);
 		user_info = JSON.stringify(user_data, null, 4);
-		access_token = token_data.access_token;
 	});
 
 	async function on_click_kakao_logout() {
