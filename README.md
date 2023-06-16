@@ -20,8 +20,8 @@ PUBLIC_KAKAO_OAUTH_TOKEN_URL=https://kauth.kakao.com/oauth/token            // T
 PUBLIC_KAKAO_OAUTH_LOGOUT_URL=https://kauth.kakao.com/oauth/logout          // Logout REST API URL
 PUBLIC_KAKAO_USER_INFO_URL=https://kapi.kakao.com/v2/user/me                // Get User Info REST API URL
 
-PUBLIC_RESULT_REDIRECT_URI=http://localhost:8080/login_result               // Setting Redirect URI
-PUBLIC_LOGOUT_REDIRECT_URI=http://localhost:8080/                           // Setting Logout Redirect URI
+PUBLIC_RESULT_REDIRECT_URI=${Your Redirect URI}                             // Setting Redirect URI
+PUBLIC_LOGOUT_REDIRECT_URI=${Your Logout Redirect URI}                      // Setting Logout Redirect URI
 PUBLIC_REST_API_KEY=${Your REST API KEY}                                    // Setting Your REST API KEY
 ```
 
