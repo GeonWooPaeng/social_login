@@ -5,7 +5,7 @@
 		align-items: center;
 	}
 	.btn_kakao_login_cls {
-		width: 40%;
+		width: 70%;
 		outline: none;
 		border: none;
 		display: inline;
