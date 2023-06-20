@@ -1,4 +1,4 @@
-# Simple Kakao OAuth 2.0 (REST API)
+# Simple Kakao And Naver OAuth 2.0 (REST API)
 
 Make Simple Kakao and Naver Oauth 2.0 with Kakao REST API 
 
