@@ -9,16 +9,17 @@
 		align-items: center;
 	}
 	.btn_kakao_logout_cls {
-		width: 20%;
-		height: 35px;
+		width: 23%;
+		height: 55px;
 		margin-bottom: 16px;
 		outline: none;
 		border: none;
-		border-radius: 4px;
+		border-radius: 8px;
 		display: inline;
 		background-color: #fee501;
 		text-align: center;
-		font-weight: 400;
+		font-weight: bold;
+		font-size: 16px;
 		cursor: pointer;
 	}
 	.div_user_info_cls {
