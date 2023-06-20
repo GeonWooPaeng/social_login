@@ -1,8 +1,10 @@
 <style>
 	.div_login_container_cls {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 8px;
 	}
 	.btn_login_cls {
 		width: 40%;
@@ -13,6 +15,7 @@
 		cursor: pointer;
 	}
 	.img_login_cls {
+		object-fit: contain;
 		width: 100%;
 	}
 </style>

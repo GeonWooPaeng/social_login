@@ -10,7 +10,7 @@
 	}
 	.btn_kakao_logout_cls {
 		width: 23%;
-		height: 55px;
+		height: 45px;
 		margin-bottom: 16px;
 		outline: none;
 		border: none;
