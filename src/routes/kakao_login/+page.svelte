@@ -46,8 +46,8 @@
 
 <script>
 	import {
-		PUBLIC_REST_API_KEY,
-		PUBLIC_RESULT_REDIRECT_URI,
+		PUBLIC_KAKAO_CLIENT_ID,
+		PUBLIC_KAKAO_REDIRECT_URI,
 		PUBLIC_KAKAO_OAUTH_LOGOUT_URL,
 		PUBLIC_LOGOUT_REDIRECT_URI
 	} from '$env/static/public';
@@ -59,10 +59,11 @@
 	onMount(async () => {
 		const params = new URLSearchParams(window.location.search);
 		const authorization_code = params.get('code');
+
 		const access_token_params = {
 			grant_type: 'authorization_code',
-			client_id: PUBLIC_REST_API_KEY,
-			redirect_uri: PUBLIC_RESULT_REDIRECT_URI,
+			client_id: PUBLIC_KAKAO_CLIENT_ID,
+			redirect_uri: PUBLIC_KAKAO_REDIRECT_URI,
 			code: authorization_code
 		};
 
@@ -72,7 +73,7 @@
 	});
 
 	async function on_click_kakao_logout() {
-		const logout_url = `${PUBLIC_KAKAO_OAUTH_LOGOUT_URL}?client_id=${PUBLIC_REST_API_KEY}&logout_redirect_uri=${PUBLIC_LOGOUT_REDIRECT_URI}`;
+		const logout_url = `${PUBLIC_KAKAO_OAUTH_LOGOUT_URL}?client_id=${PUBLIC_KAKAO_CLIENT_ID}&logout_redirect_uri=${PUBLIC_LOGOUT_REDIRECT_URI}`;
 		window.location.href = logout_url;
 	}
 </script>
