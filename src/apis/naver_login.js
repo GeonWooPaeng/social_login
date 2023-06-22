@@ -1,6 +1,6 @@
 export async function get_token_data_naver(params) {
 	try {
-		const response = await fetch('/naver_token_data', {
+		const response = await fetch('/servers/naver_token_data', {
 			method: 'POST',
 			body: JSON.stringify(params)
 		});
@@ -13,7 +13,7 @@ export async function get_token_data_naver(params) {
 
 export async function get_user_info_naver(token_data) {
 	try {
-		const response = await fetch('/naver_user_info', {
+		const response = await fetch('/servers/naver_user_info', {
 			method: 'POST',
 			body: JSON.stringify(token_data)
 		});

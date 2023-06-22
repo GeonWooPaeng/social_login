@@ -44,17 +44,14 @@
 	} from '$env/static/public';
 	import kakao_login from '$lib/images/kakao-login.png';
 	import naver_login from '$lib/images/naver-login.png';
-	import { get_authorization_page_kakao } from '../apis/kakao_login.js';
 
 	async function on_click_kakao_login() {
-		// const authorize_page = await get_authorization_page_kakao();
-		// console.log(authorize_page);
 		const authorize_url = `${PUBLIC_KAKAO_OAUTH_AUTHORIZE_URL}?response_type=code&client_id=${PUBLIC_KAKAO_CLIENT_ID}&redirect_uri=${PUBLIC_KAKAO_REDIRECT_URI}`;
 		window.location.href = authorize_url;
 	}
 
 	async function on_click_naver_login() {
-		const authorize_url = `${PUBLIC_NAVER_OAUTH_AUTHORIZE_URL}?response_type=code&client_id=${PUBLIC_NAVER_CLIENT_ID}&state=test&redirect_uri=${PUBLIC_NAVER_REDIRECT_URI}`;
+		const authorize_url = `${PUBLIC_NAVER_OAUTH_AUTHORIZE_URL}?response_type=code&client_id=${PUBLIC_NAVER_CLIENT_ID}&redirect_uri=${PUBLIC_NAVER_REDIRECT_URI}`;
 		window.location.href = authorize_url;
 	}
 </script>
