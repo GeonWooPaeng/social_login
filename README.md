@@ -1,6 +1,6 @@
 # Simple Kakao And Naver OAuth 2.0 (REST API)
 
-Make Simple Kakao and Naver Oauth 2.0 with Kakao REST API 
+Make Simple Kakao And Naver Oauth 2.0 with Kakao And Naver REST API 
 
 ## What is inside?
 
@@ -43,4 +43,6 @@ Open http://localhost:8080 with your browser to see the result.
 
 If you need more imformation please enter my Blog :)
 
-BlogLink: https://gwpaeng.tistory.com/454
+BlogLink:
+- 개념: https://gwpaeng.tistory.com/454
+- 구현: https://gwpaeng.tistory.com/455
